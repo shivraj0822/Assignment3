@@ -5,5 +5,6 @@ public class Grade
     public string Medium { get; set; }
     public String Subject { get; set; }
     public String S_Year { get; set; }
+     public List<Student> Students { get; set; }
 
 }

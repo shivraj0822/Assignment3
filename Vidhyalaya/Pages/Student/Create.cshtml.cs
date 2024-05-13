@@ -19,6 +19,7 @@ namespace Vidhyalaya.Pages_Student
 
         public IActionResult OnGet()
         {
+             ViewData["GradeId"] = new SelectList(_context.Grade, "Id", "Id");
             return Page();
         }
 

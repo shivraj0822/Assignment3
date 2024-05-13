@@ -35,7 +35,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Student[0].GuardianDetails)
             </th>
-            <th></th>
+              <th>
+                @Html.DisplayNameFor(model => model.Student[0].GradeId)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -59,6 +61,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.GuardianDetails)
             </td>
+              <td>
+                @Html.DisplayFor(modelItem => item.Grade.Id)
+            </td>
+         
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |

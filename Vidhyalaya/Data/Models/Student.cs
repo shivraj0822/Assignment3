@@ -8,6 +8,10 @@ public class Student
     public byte[] Photo { get; set; }
     public string GuardianDetails { get; set; }
 
+    public int GradeId{ get; set; }
+    public Grade Grade { get; set; }
+
+
 }
 
 public enum Gender
